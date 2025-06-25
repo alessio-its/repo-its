@@ -24,10 +24,10 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore Nuova cartella/ConsoleAppGitHub/ConsoleAppGitHub.sln
+      run: dotnet restore Nuova_cartella/ConsoleAppGitHub/ConsoleAppGitHub.sln
 
     - name: Build solution
-      run: dotnet build Nuova cartella/ConsoleAppGitHub/ConsoleAppGitHub.sln --configuration ${{ matrix.configuration }} --no-restore
+      run: dotnet build Nuova_cartella/ConsoleAppGitHub/ConsoleAppGitHub.sln --configuration ${{ matrix.configuration }} --no-restore
 
     - name: Run tests
-      run: dotnet test Nuova cartella/ConsoleAppGitHub/ConsoleAppGitHub.sln --configuration ${{ matrix.configuration }} --no-build
+      run: dotnet test Nuova_cartella/ConsoleAppGitHub/ConsoleAppGitHub.sln --configuration ${{ matrix.configuration }} --no-build
